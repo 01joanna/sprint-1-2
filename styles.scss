@@ -1,10 +1,55 @@
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
 
 // variables
 $primary: #5265E1;
 $secondary: #FA5959;
 
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+
+.ls-tight {
+  letter-spacing: -0.05rem;
+}
+
+.ls-normal {
+  letter-spacing: normal;
+}
+
+.ls-wide {
+  letter-spacing: 0.05rem;
+}
+
+.ls-wider {
+  letter-spacing: 0.4rem;
+}
 
 .fs-7 {
-  font-size: 0.75rem;
+  font-size: 0.75rem !important;
 }
+
+.mt-7 {
+  margin-top: 7rem;
+
+}
+
+.nav-features {
+  border: none !important;
+  text-decoration: none !important;
+  color: #7F7F7F !important;
+}
+
+.nav-features.active {
+  border-bottom: 3px solid $secondary !important;
+}
+
+.card-custom {
+  border: none !important;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem 0 rgba(136, 152, 170, 0.15);
+
+}
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
