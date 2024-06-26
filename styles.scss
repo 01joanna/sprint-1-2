@@ -14,6 +14,36 @@ body {
   margin: 0;
 }
 
+.nav-link:hover {
+  color: $secondary !important;
+}
+
+.btn:hover {
+  background-color: transparent !important;
+  color: $primary !important;
+}
+
+.login:hover {
+  color: $secondary !important;
+}
+
+.btn-chrome:hover {
+  color: $primary !important;
+}
+
+.btn-firefox:hover {
+  border: 1px gray solid !important;
+}
+
+.accordion-button:hover {
+  color: $secondary !important;
+}
+
+.contact-btn:hover {
+  background-color: #FFF !important;
+  color: $secondary !important;
+}
+
 .custom-background-blue {
   z-index: -1;
   width: 500px;
@@ -34,7 +64,21 @@ body {
 
 }
 
+.accordion-button::after {
+  color: blue;
+}
 
+.accordion-button::after {
+  background-image: url( /src/Imagenes/icon-arrow.svg) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url( /src/Imagenes/icon-arrow-copy.svg) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  color: red;
+}
 
 .ls-tight {
   letter-spacing: -0.05rem;
@@ -64,6 +108,10 @@ body {
   border: none !important;
   text-decoration: none !important;
   color: #7F7F7F !important;
+
+  :hover {
+    color: $secondary !important;
+  }
 }
 
 .nav-features.active {

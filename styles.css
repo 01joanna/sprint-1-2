@@ -4,6 +4,36 @@ body {
   margin: 0;
 }
 
+.nav-link:hover {
+  color: #FA5959 !important;
+}
+
+.btn:hover {
+  background-color: transparent !important;
+  color: #5265E1 !important;
+}
+
+.login:hover {
+  color: #FA5959 !important;
+}
+
+.btn-chrome:hover {
+  color: #5265E1 !important;
+}
+
+.btn-firefox:hover {
+  border: 1px gray solid !important;
+}
+
+.accordion-button:hover {
+  color: #FA5959 !important;
+}
+
+.contact-btn:hover {
+  background-color: #FFF !important;
+  color: #FA5959 !important;
+}
+
 .custom-background-blue {
   z-index: -1;
   width: 500px;
@@ -21,6 +51,22 @@ body {
   top: 9rem;
   position: absolute;
   border-bottom-right-radius: 8rem;
+}
+
+.accordion-button::after {
+  color: blue;
+}
+
+.accordion-button::after {
+  background-image: url(/src/Imagenes/icon-arrow.svg) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/src/Imagenes/icon-arrow-copy.svg) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  color: red;
 }
 
 .ls-tight {
@@ -51,6 +97,9 @@ body {
   border: none !important;
   text-decoration: none !important;
   color: #7F7F7F !important;
+}
+.nav-features :hover {
+  color: #FA5959 !important;
 }
 
 .nav-features.active {
