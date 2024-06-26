@@ -318,8 +318,8 @@
         <div class="row w-50 justify-content-center align-items-center">
             <form action="" class="col gap-2 d-flex flex-column flex-md-row ">
                 <input type="email" class="form-control w-100 text-black-50" placeholder="Enter your email address"
-                    id="footerFormEmail">
-                <div class="invalid-feedback">
+                    id="footerFormEmail" aria-describedby="validationFeedback" required>
+                <div class="invalid-feedback" id="validationFeedback">
                     Whoops, make sure it's and email
                 </div>
 
