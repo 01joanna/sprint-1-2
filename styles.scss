@@ -9,6 +9,32 @@ $theme-colors: (
   "secondary": $secondary
 );
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.custom-background-blue {
+  z-index: -1;
+  width: 500px;
+  height: 340px;
+  top: 10rem;
+  right: 0px;
+  position: absolute;
+  border-bottom-left-radius: 8rem;
+}
+
+.custom-background-blue-second {
+  z-index: -1;
+  width: 580px;
+  height: 300px;
+  top: 9rem;
+  position: absolute;
+  border-bottom-right-radius: 8rem;
+
+}
+
+
 
 .ls-tight {
   letter-spacing: -0.05rem;
@@ -31,8 +57,7 @@ $theme-colors: (
 }
 
 .mt-7 {
-  margin-top: 7rem;
-
+  margin-top: 7rem !important;
 }
 
 .nav-features {
@@ -50,6 +75,21 @@ $theme-colors: (
   border-radius: 0.5rem;
   box-shadow: 0 0 1rem 0 rgba(136, 152, 170, 0.15);
 
+}
+
+@media (max-width: 575px) {
+  .custom-background-blue {
+    height: 270px !important; 
+    width: 380px !important; 
+    top: 7rem !important;
+    z-index: -1;
+  }
+  .custom-background-blue-second {
+    height: 200px !important; 
+    width: 380px !important; 
+    top: 7rem !important;
+    z-index: -1;
+  }
 }
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
